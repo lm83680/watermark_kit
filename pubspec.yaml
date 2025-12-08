@@ -4,9 +4,9 @@ version: 2.1.1
 homepage: https://github.com/tttocklll/watermark_kit
 repository: https://github.com/tttocklll/watermark_kit
 issue_tracker: https://github.com/tttocklll/watermark_kit/issues
-
+# meta Limit sdk ^3.8.0
 environment:
-  sdk: ^3.8.0
+  sdk: ^3.7.0 
   flutter: '>=3.3.0'
 
 dependencies:
