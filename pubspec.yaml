@@ -1,5 +1,5 @@
 name: watermark_kit
-description: "Fast watermarking for Flutter (iOS + Android). Image/text overlays for images and videos without FFmpeg (Core Image/AVFoundation on iOS; MediaCodec + GLES on Android)."
+description: "Watermarking for Flutter on iOS and Android, with a temporary pass-through implementation for OHOS."
 version: 2.2.0
 homepage: https://github.com/tttocklll/watermark_kit
 repository: https://github.com/tttocklll/watermark_kit
@@ -48,6 +48,10 @@ flutter:
       android:
         package: com.tttocklll.watermark_kit
         pluginClass: WatermarkKitPlugin
+      ohos:
+        pluginClass: WatermarkKitPlugin
+        dartPluginClass: OhosWatermarkKit
+        dartFileName: watermark_kit_ohos.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

@@ -1,3 +1,8 @@
+## Unreleased
+
+Added
+- OHOS plugin registration and a temporary pass-through implementation for image, text, and video APIs. No watermark is applied on OHOS yet.
+
 ## 2.2.0
 
 Added

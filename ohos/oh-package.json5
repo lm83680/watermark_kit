@@ -1,0 +1,6 @@
+{
+  "name": "watermark_kit",
+  "version": "2.2.0",
+  "main": "index.ets",
+  "dependencies": {}
+}

@@ -1,11 +1,14 @@
 # watermark_kit
 
-Lightweight, fast watermarking plugin for Flutter (iOS + Android). Compose image or text watermarks over images and videos, with a simple cross‑platform API and no FFmpeg dependency. Under the hood: iOS uses Core Image + AVFoundation; Android uses MediaCodec + OpenGL ES.
+Lightweight, fast watermarking plugin for Flutter (iOS + Android, plus an OHOS pass-through implementation). Compose image or text watermarks over images and videos, with a simple cross‑platform API and no FFmpeg dependency. Under the hood: iOS uses Core Image + AVFoundation; Android uses MediaCodec + OpenGL ES.
 
 ## Platform Support
 
 - iOS: images, text, video
 - Android: images, text, video (API 24+)
+- OHOS: temporary pass-through implementation; image/text return the original image and video returns or copies the original file without a watermark. Video dimensions and duration are reported as 0.
+
+On OHOS, output format, quality, codec, and watermark options are currently ignored. An explicit video output path receives an unmodified copy; without one, the result points to the input file. Missing input video files still report an error.
 
 ## Install
 
